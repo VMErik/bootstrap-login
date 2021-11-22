@@ -1,0 +1,12 @@
+.bg {
+    /* Ponemos nuestra imagen de fondo y hacemos que se centre */
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+}
+
+body {
+    /* Color por si nuestro explorador no soporta degradados */
+    background: #302A82;
+    /* Agregamos nuestro gradiante hacia la derecha */
+    background: linear-gradient(to right, #5C2A82, #302A82);
+}

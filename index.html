@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Respnsive</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Le ponemos que abarque el 75% de la pantalla, un margin top de 5 piexeles, bordes redondeados y sombra -->
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <!-- Ponemos como defaul un display none, cuando sea largo que se vea en block, cuanto sea mediano que abarque 5 posiciones de columnas
+            al igual cuando sea largo y cuando rea extra largo que abarque seis, y le ponemos bordes redondeados -->
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                <!-- Esta es para la imagen -->
+            </div>
+            <!-- Le ponemos un color de fondo de color blanco un padding de 5, bordes reondeados solo al final -->
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-center">
+                    <!-- Esta es para el contenido -->
+                    <img src="img/logo.png" width="40" alt="">
+                </div>
+                <h2 class="fw-bold text-center py-5">Welcome</h2>
+                <!-- LOGIN -->
+                <form action="#">
+                    <div class="mb-4">
+                        <label for="email" class="form-label">
+							Email
+						</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">
+							Password
+						</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="conected" class="form-check-input">
+                        <label for="conected" class="form-check-label">Remember me</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+							Log In
+						</button>
+                    </div>
+                    <div class="my-3">
+                        <span> <a href="#"> Forgot your password  ?</a> </span>
+                        <br>
+                        <span>You dont have account? <a href="#"> Sign Up </a></span>
+                    </div>
+                </form>
+
+                <!-- L0GIN CON REDES SOCIALES -->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Login whit a social network</div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn btn-outline-primary w-100 my-1">
+									<!-- Los alineamos verticalmente -->
+									<div class="row align-items-center">
+										<div class="col-2 d-none d-md-block">
+											<i class="fab fa-facebook-square"></i>
+										</div>
+										<div class="col-12 text-center col-md-10">
+											Facebook
+										</div>
+									</div>
+								</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-outline-danger w-100 my-1">
+									<!-- Los alineamos verticalmente -->
+									<div class="row align-items-center">
+										<div class="col-2 d-none d-md-block">
+											<i class="fab fa-google"></i>
+										</div>
+										<div class="col-12 text-center col-md-10">
+											Google
+										</div>
+									</div>
+								</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
